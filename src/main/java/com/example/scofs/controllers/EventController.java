@@ -19,7 +19,7 @@ public class EventController {
 
 
 
-    @GetMapping(path = "/get", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(path = "/get")
     public ResponseEntity<?> getEvent(@RequestParam(required = false) String event) {
         Map<String, String> message = new HashMap<>();
 
